@@ -22,9 +22,11 @@ class Pet:
 
     def jrat(self):
         if self.hunger >= 100:
-            self.satiety = 100
+            self.hunger = 100
         else:
             self.hunger += 10
+            self.home.food -= 5
+
 
     def igrat(self):
         self.schastie += 10
